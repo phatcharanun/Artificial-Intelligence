@@ -40,7 +40,7 @@ print(train_labels[0])
 #Using Sequential() to build layers oneafter another
 model = tf.keras.Sequential([
     tf.keras.layers.Flatten(), #input layer
-    tf.keras.layers.Dense(2, activation='relu'), #hidden layer
+    tf.keras.layers.Dense(512, activation='relu'), #hidden layer
     tf.keras.layers.Dense(10, activation='softmax') #output layer
 ])
 
