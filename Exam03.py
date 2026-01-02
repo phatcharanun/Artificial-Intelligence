@@ -105,7 +105,7 @@ def plot_decision_boundary(X_raw, y, model, title, ax):
     Z = Z.reshape(xx.shape)
     
     ax.contourf(xx, yy, Z, levels=[0, 0.5, 1], cmap=plt.cm.RdBu, alpha=0.6)
-    ax.scatter(X_raw[:, 0], X_raw[:, 1], c=y, cmap=plt.cm.RdBu_r, edgecolors='w', s=20)
+    ax.scatter(X_raw[:, 0], X_raw[:, 1], c=y, cmap=plt.cm.RdBu_r,edgecolors='w', s=20)
     ax.set_title(title)
 
 fig, axes = plt.subplots(1, 2, figsize=(16, 7))
