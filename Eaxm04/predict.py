@@ -9,7 +9,7 @@ model = tf.keras.models.load_model('my_model.h5')
 class_names = ['Mouse', 'lip']
 
 # ระบุภาพที่ต้องการทดสอบ
-img_path = 'D:/AI/Eaxm04/Input3.jpg'   # เปลี่ยนชื่อไฟล์ได้
+img_path = 'D:/AI/Eaxm04/Input4.jpg'   
 
 # โหลดและ preprocess ภาพ
 img = image.load_img(img_path, target_size=(128, 128))
